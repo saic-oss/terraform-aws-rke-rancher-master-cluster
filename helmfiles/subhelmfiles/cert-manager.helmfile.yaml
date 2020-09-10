@@ -1,0 +1,27 @@
+repositories:
+  - name: jetstack
+    url: "https://charts.jetstack.io"
+
+missingFileHandler: Error
+
+releases:
+  - name: "cert-manager"
+    namespace: "cert-manager"
+    labels:
+      chart: "cert-manager"
+      repo: "jetstack"
+      namespace: "cert-manager"
+      vendor: "jetstack"
+    chart: "jetstack/cert-manager"
+    version: "1.0.1"
+    wait: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - resources:
+          requests:
+            cpu: "50m"
+            memory: "128Mi"
+          limits:
+            cpu: "10"
+            memory: "256Mi"

@@ -1,0 +1,6 @@
+helmfiles:
+  - path: "subhelmfiles/cert-manager-crd.helmfile.yaml"
+  - path: "subhelmfiles/cert-manager.helmfile.yaml"
+  - path: "subhelmfiles/rancher.helmfile.yaml"
+
+missingFileHandler: Error

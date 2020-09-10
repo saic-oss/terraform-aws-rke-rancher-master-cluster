@@ -1,0 +1,14 @@
+region                          = "us-east-1"
+namespace                       = "example"
+stage                           = "test"
+name                            = "rke-rancher-master-cluster"
+instance_type                   = "t3a.medium"
+kubernetes_version              = "v1.18.3-rancher2-2"
+node_volume_size                = "50"
+availability_zones              = ["us-east-1a", "us-east-1b", "us-east-1c"]
+hosted_zone_id                  = "***REMOVED***"
+hosted_zone_domain_name         = "***REMOVED***"
+subdomain_rancher_prefix        = "rancher"
+additional_tag_map              = {}
+rancher_letsencrypt_email       = "***REMOVED***"
+rancher_letsencrypt_environment = "staging"

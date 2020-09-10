@@ -1,0 +1,35 @@
+repositories:
+  - name: rancher
+    url: "https://releases.rancher.com/server-charts/stable"
+
+missingFileHandler: Error
+
+releases:
+  - name: "rancher"
+    namespace: "cattle-system"
+    labels:
+      chart: "rancher"
+      repo: "rancher-stable"
+      namespace: "cattle-system"
+      vendor: "rancher"
+    chart: "rancher/rancher"
+    version: "2.4.8"
+    wait: true
+    atomic: true
+    cleanupOnFail: true
+    values:
+      - ingress:
+          tls:
+            source: "letsEncrypt"
+        hostname: {{ requiredEnv "RANCHER_HOSTNAME" | quote }}
+        letsEncrypt:
+          email: {{ requiredEnv "RANCHER_LETSENCRYPT_EMAIL" | quote }}
+          environment:
+            {{ requiredEnv "RANCHER_LETSENCRYPT_ENVIRONMENT" | quote }}
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "1Gi"
+          limits:
+            cpu: "1"
+            memory: "1Gi"
