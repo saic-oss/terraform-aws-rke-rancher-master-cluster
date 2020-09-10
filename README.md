@@ -41,6 +41,11 @@ The purpose of this module is to give an easy way to stand up a production-ready
 
 1. Terraform v0.13+ - Uses the new way to pull down 3rd party providers.
 1. \*nix operating system - Windows not supported. If you need to use this on Windows you can run it from a Docker container.
+1. Since this module uses a `local-exec`, the following tools also need to be installed on the machine using this module:
+   1. [kubectl][kubectl]
+   1. [helm][helm]
+   1. [helmfile][helmfile]
+   1. [helm-diff plugin][helm-diff]
 
 ### Instructions
 
@@ -188,3 +193,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 [tflint]: https://github.com/terraform-linters/tflint
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
 [tfsec]: https://github.com/liamg/tfsec
+[kubectl]: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+[helm]: https://helm.sh/docs/intro/install/
+[helmfile]: https://github.com/roboll/helmfile
+[helm-diff]: https://github.com/databus23/helm-diff
