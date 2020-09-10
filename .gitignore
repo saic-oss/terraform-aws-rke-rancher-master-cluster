@@ -1,0 +1,13 @@
+.idea
+
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.*.backup
+.terraform.tfstate.lock.info
+terraform-provider-rke-tmp-*
+helmfile-*.yaml
+.shoal
+
+tmp/*
+!tmp/.gitkeep
