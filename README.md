@@ -1,5 +1,7 @@
 # terraform-aws-rke-rancher-master-cluster
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1a0da89e2ec443ed9de6d90eaa9bccd8)](https://www.codacy.com/gh/saic-oss/terraform-aws-rke-rancher-master-cluster/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=saic-oss/terraform-aws-rke-rancher-master-cluster&amp;utm_campaign=Badge_Grade)
+
 Terraform module that creates an RKE cluster, meant to serve as nothing but a highly-available Rancher "master" cluster
 
 ## Introduction
