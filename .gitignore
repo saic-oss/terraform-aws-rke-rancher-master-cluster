@@ -9,5 +9,7 @@ terraform-provider-rke-tmp-*
 helmfile-*.yaml
 .shoal
 
+examples/complete/example_custom.tfvars
+
 tmp/*
 !tmp/.gitkeep
