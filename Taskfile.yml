@@ -17,3 +17,8 @@ tasks:
     cmds:
       - pre-commit install
       - pre-commit run -a
+
+  lint:
+    desc: Run linter
+    cmds:
+      - docker run -it -v $(pwd):/src codacy/codacy-remark-lint:dev
