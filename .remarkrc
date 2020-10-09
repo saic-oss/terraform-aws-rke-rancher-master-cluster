@@ -24,7 +24,6 @@
     ["remark-lint-rule-style", "---"],
     "remark-lint-no-table-indentation",
     "remark-lint-table-pipes",
-    "remark-lint-table-pipe-alignment",
     ["remark-lint-table-cell-padding", "padded"],
     "remark-lint-no-inline-padding",
     "remark-lint-no-shortcut-reference-image",
