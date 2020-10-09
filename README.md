@@ -130,7 +130,7 @@ Contributors to this module should make themselves familiar with this section.
 
 This module will use SemVer, and will stay on v0.X for the foreseeable future
 
-<!--lint disable table-pipe-alignment-->
+<!-- lint disable table-pipe-alignment -->
 <!-- prettier-ignore-start -->
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -190,7 +190,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- prettier-ignore-end -->
-<!--lint disable table-pipe-alignment-->
+<!-- lint enable table-pipe-alignment -->
 
 [helm-operator]: https://github.com/fluxcd/helm-operator
 [pre-commit]: https://pre-commit.com/
