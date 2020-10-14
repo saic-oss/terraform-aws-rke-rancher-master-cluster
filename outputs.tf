@@ -4,13 +4,13 @@ output "ssh_public_key" {
 }
 
 output "ssh_private_key" {
-  description = "[SENSITIVE] Cluster nodes' private SSH key"
+  description = "Cluster nodes' private SSH key"
   value       = tls_private_key.ssh.private_key_pem
   sensitive   = true
 }
 
 output "cluster_kubeconfig" {
-  description = "[SENSITIVE] KUBECONFIG yaml file contents to connect to the cluster. DO NOT USE unless you have no other options. Users should use the KUBECONFIG that Rancher provides to them rather than this."
+  description = "KUBECONFIG yaml file contents to connect to the cluster. DO NOT USE unless you have no other options. Users should use the KUBECONFIG that Rancher provides to them rather than this."
   value       = rke_cluster.default.kube_config_yaml
   sensitive   = true
 }

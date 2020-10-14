@@ -50,7 +50,7 @@ variable "node_volume_size" {
 
 variable "kubernetes_version" {
   type        = string
-  description = "Kubernetes version to use. Must be supported by the version of the RKE provider you are using. See https://github.com/rancher/terraform-provider-rke/releases"
+  description = "Kubernetes version to use. Must be supported by the version of the RKE provider you are using. See [https://github.com/rancher/terraform-provider-rke/releases](https://github.com/rancher/terraform-provider-rke/releases)"
 }
 
 variable "hosted_zone_id" {
