@@ -163,7 +163,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 | hosted\_zone\_domain\_name | Domain name of the hosted zone to create records in | `string` | n/a | yes |
 | hosted\_zone\_id | ID of Route53 hosted zone to create records in | `string` | n/a | yes |
 | instance\_type | Instance type to use for the cluster nodes | `string` | n/a | yes |
-| kubernetes\_version | Kubernetes version to use. Must be supported by the version of the RKE provider you are using. See https://github.com/rancher/terraform-provider-rke/releases | `string` | n/a | yes |
+| kubernetes\_version | Kubernetes version to use. Must be supported by the version of the RKE provider you are using. See [https://github.com/rancher/terraform-provider-rke/releases](https://github.com/rancher/terraform-provider-rke/releases) | `string` | n/a | yes |
 | name | Solution name | `string` | n/a | yes |
 | namespace | Namespace, which could be your organization name or abbreviation | `string` | n/a | yes |
 | node\_group\_1\_subnet\_id | Subnet to deploy node group 1 to | `string` | n/a | yes |
@@ -180,11 +180,11 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 
 | Name | Description |
 |------|-------------|
-| cluster\_kubeconfig | [SENSITIVE] KUBECONFIG yaml file contents to connect to the cluster. DO NOT USE unless you have no other options. Users should use the KUBECONFIG that Rancher provides to them rather than this. |
+| cluster\_kubeconfig | KUBECONFIG yaml file contents to connect to the cluster. DO NOT USE unless you have no other options. Users should use the KUBECONFIG that Rancher provides to them rather than this. |
 | rancher\_admin\_password | Password for Rancher 'admin' user |
 | rancher\_admin\_token | API Token for Rancher 'admin' user |
 | rancher\_endpoint | Endpoint of Rancher Server |
-| ssh\_private\_key | [SENSITIVE] Cluster nodes' private SSH key |
+| ssh\_private\_key | Cluster nodes' private SSH key |
 | ssh\_public\_key | Cluster nodes' public SSH key |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
