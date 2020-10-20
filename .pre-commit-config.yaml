@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.37.0
+    rev: v1.43.0
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
@@ -33,6 +33,6 @@ repos:
     hooks:
       - id: shellcheck
   - repo: https://github.com/prettier/prettier
-    rev: 2.1.1
+    rev: 2.1.2
     hooks:
       - id: prettier
