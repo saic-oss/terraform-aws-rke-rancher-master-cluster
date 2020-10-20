@@ -136,24 +136,26 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13.0, < 0.14.0 |
-| aws | >= 2.0.0, < 3.0.0 |
-| rancher2 | >= 1.0.0, < 2.0.0 |
-| random | >= 2.0.0, < 3.0.0 |
-| rke | >= 1.0.0, < 2.0.0 |
-| tls | >= 2.0.0, < 3.0.0 |
+| terraform | >= 0.13.3 |
+| aws | >= 2.0.0 |
+| local | >= 1.0.0 |
+| null | >= 2.0.0 |
+| rancher2 | >= 1.0.0 |
+| random | >= 2.0.0 |
+| rke | >= 1.0.0 |
+| tls | >= 2.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 2.0.0, < 3.0.0 |
-| local | n/a |
-| null | n/a |
-| rancher2.bootstrap | >= 1.0.0, < 2.0.0 |
-| random | >= 2.0.0, < 3.0.0 |
-| rke | >= 1.0.0, < 2.0.0 |
-| tls | >= 2.0.0, < 3.0.0 |
+| aws | >= 2.0.0 |
+| local | >= 1.0.0 |
+| null | >= 2.0.0 |
+| rancher2.bootstrap | >= 1.0.0 |
+| random | >= 2.0.0 |
+| rke | >= 1.0.0 |
+| tls | >= 2.0.0 |
 
 ## Inputs
 
