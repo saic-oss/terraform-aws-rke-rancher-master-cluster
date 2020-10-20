@@ -15,8 +15,6 @@ tasks:
   validatePreCommitHooks:
     desc: Validate the pre-commit hooks
     cmds:
-      - pre-commit clean
-      - pre-commit gc
       - pre-commit install
       - pre-commit run -a
 
