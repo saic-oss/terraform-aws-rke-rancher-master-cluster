@@ -136,7 +136,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.13.3 |
+| terraform | >= 0.13.0 |
 | aws | >= 2.0.0 |
 | local | >= 1.0.0 |
 | null | >= 2.0.0 |
