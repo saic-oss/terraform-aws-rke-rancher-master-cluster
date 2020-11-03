@@ -53,7 +53,16 @@ The purpose of this module is to give an easy way to stand up a production-ready
 
 #### Complete Example
 
-See [examples/complete](examples/complete) for an example of how to use this module. This module does not require anything special, just use the standard `terraform apply`/`terraform destroy`.
+See [examples/complete](examples/complete) for an example of how to use this module. For your convenience a Taskfile has been provided to be used with [go-task][go-task].
+
+```sh
+cd examples/complete
+task plan
+task apply
+task destroy
+```
+
+> There are a few parameters that are specific to your AWS account and your domain name you want to use that are not included in the example `terraform.tfvars`. You should create a `override.auto.tfvars` file and add the missing parameters to that.
 
 #### Provider config
 
@@ -124,7 +133,10 @@ Contributors to this module should make themselves familiar with this section.
   - [terraform-docs][terraform-docs]
   - [tfsec][tfsec]
 - Run `pre-commit install` in root dir of repo (installs the pre-commit hooks so they run automatically when you try to do a git commit)
-- Run `terraform init` in root dir of repo so the pre-commit hooks can work
+
+Using the [ASDF][asdf] version manager is highly encouraged. The project supports it by using a `.tool-versions` file to specify the versions of tools used and ensure that all necessary tools are installed.
+
+See [this Gist][add-asdf-plugins.sh] for a quick way to add a set of plugins that will work for this project
 
 ### Versioning
 
@@ -143,6 +155,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 | rancher2 | >= 1.0.0 |
 | random | >= 2.0.0 |
 | rke | >= 1.0.0 |
+| template | >= 2.0.0 |
 | tls | >= 2.0.0 |
 
 ## Providers
@@ -192,7 +205,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- prettier-ignore-end -->
 
-[helm-operator]: https://github.com/fluxcd/helm-operator
+[asdf]: https://asdf-vm.com
 [pre-commit]: https://pre-commit.com/
 [tflint]: https://github.com/terraform-linters/tflint
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
@@ -201,3 +214,5 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 [helm]: https://helm.sh/docs/intro/install/
 [helmfile]: https://github.com/roboll/helmfile
 [helm-diff]: https://github.com/databus23/helm-diff
+[go-task]: https://taskfile.dev
+[add-asdf-plugins.sh]: https://gist.github.com/RothAndrew/fadd2f613d4b09cca3df69e848e3a504
