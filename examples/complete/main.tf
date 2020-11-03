@@ -37,7 +37,7 @@ module "vpc" {
 }
 
 module "subnets" {
-  source               = "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=tags/0.27.0"
+  source               = "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=tags/0.31.0"
   availability_zones   = var.availability_zones
   namespace            = var.namespace
   stage                = var.stage
@@ -53,7 +53,7 @@ module "subnets" {
 }
 
 module "rke_rancher_master_cluster" {
-  //source                 = "git::https://path/to/repo.git?ref=tags/x.y.z"
+  //source                        = "git::https://path/to/repo.git?ref=tags/x.y.z"
   source                          = "../.."
   additional_tag_map              = {}
   instance_type                   = var.instance_type

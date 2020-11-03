@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: "2"
+
+tasks:
+  plan:
+    desc: Plan the example infra
+    cmds:
+      - terraform plan -input=false -var-file=override.tfvars
+
+  apply:
+    desc: Apply the example infra
+    cmds:
+      - terraform apply -auto-approve -input=false -var-file=override.tfvars
+
+  destroy:
+    desc: Destroy the example infra
+    cmds:
+      - terraform destroy -auto-approve -input=false -var-file=override.tfvars

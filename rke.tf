@@ -59,6 +59,7 @@ resource "rke_cluster" "default" {
 resource "local_file" "kubeconfig" {
   filename          = "${path.module}/tmp/kubeconfig.yaml"
   sensitive_content = rke_cluster.default.kube_config_yaml
+  file_permission   = "0644"
   depends_on = [
     rke_cluster.default
   ]
