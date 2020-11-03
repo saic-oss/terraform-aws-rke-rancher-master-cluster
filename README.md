@@ -138,8 +138,6 @@ Using the [ASDF][asdf] version manager is highly encouraged. The project support
 
 See [this Gist][add-asdf-plugins.sh] for a quick way to add a set of plugins that will work for this project
 
-[asdf]: https://asdf-vm.com
-
 ### Versioning
 
 This module will use SemVer, and will stay on v0.X for the foreseeable future
@@ -207,7 +205,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 <!-- prettier-ignore-end -->
 
-[helm-operator]: https://github.com/fluxcd/helm-operator
+[asdf]: https://asdf-vm.com
 [pre-commit]: https://pre-commit.com/
 [tflint]: https://github.com/terraform-linters/tflint
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
