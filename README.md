@@ -62,7 +62,7 @@ task apply
 task destroy
 ```
 
-> There are a few parameters that are specific to your AWS account and your domain name you want to use that are not included in the example `terraform.tfvars`. You should create a `override.auto.tfvars` file and add the missing parameters to that.
+> There are a few parameters that are specific to your AWS account and your domain name you want to use that are not included in the example `terraform.tfvars`. You should create a `override.tfvars` file and add the missing parameters to that.
 
 #### Provider config
 
