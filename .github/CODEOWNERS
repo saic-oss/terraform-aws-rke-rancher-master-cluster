@@ -5,3 +5,4 @@
 /.pre-commit-config.yaml    @saic-oss/compliance
 /Taskfile.yml               @saic-oss/compliance
 /.remarkrc                  @saic-oss/compliance
+/LICENSE                    @saic-oss/compliance
