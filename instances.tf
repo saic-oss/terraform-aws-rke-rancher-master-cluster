@@ -14,7 +14,7 @@ resource "aws_instance" "node_group_1" {
   }
   tags = merge(module.label.tags,
     {
-      "Name" = "${module.label.id}-1.${count.index}"
+      "Name" = "${module.label.id}-rancher-master-1.${count.index}"
   })
   provisioner "remote-exec" {
     connection {
@@ -46,7 +46,7 @@ resource "aws_instance" "node_group_2" {
   }
   tags = merge(module.label.tags,
     {
-      "Name" = "${module.label.id}-2.${count.index}"
+      "Name" = "${module.label.id}-rancher-master-2.${count.index}"
   })
   provisioner "remote-exec" {
     connection {
@@ -78,7 +78,7 @@ resource "aws_instance" "node_group_3" {
   }
   tags = merge(module.label.tags,
     {
-      "Name" = "${module.label.id}-3.${count.index}"
+      "Name" = "${module.label.id}-rancher-master-3.${count.index}"
   })
   provisioner "remote-exec" {
     connection {
