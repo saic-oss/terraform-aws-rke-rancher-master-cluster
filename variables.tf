@@ -13,6 +13,21 @@ variable "name" {
   description = "Solution name"
 }
 
+variable "repo" {
+  type        = string
+  description = "Repo URL that is responsible for this resource"
+}
+
+variable "owner" {
+  type        = string
+  description = "Email address of owner"
+}
+
+variable "description" {
+  type        = string
+  description = "Short description of what/why this product exists"
+}
+
 variable "additional_tag_map" {
   type        = map(string)
   description = "Map of additional tags to apply to every taggable resource. If you don't want any use an empty map - '{}'"
