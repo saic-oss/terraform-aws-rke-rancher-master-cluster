@@ -56,6 +56,7 @@ module "rke_rancher_master_cluster" {
   //source                        = "git::https://path/to/repo.git?ref=tags/x.y.z"
   source                          = "../.."
   additional_tag_map              = {}
+  description                     = var.description
   instance_type                   = var.instance_type
   kubernetes_version              = var.kubernetes_version
   name                            = var.name
@@ -64,6 +65,8 @@ module "rke_rancher_master_cluster" {
   node_group_2_subnet_id          = module.subnets.public_subnet_ids[1]
   node_group_3_subnet_id          = module.subnets.public_subnet_ids[2]
   node_volume_size                = var.node_volume_size
+  owner                           = var.owner
+  repo                            = var.repo
   stage                           = var.stage
   vpc_id                          = module.vpc.vpc_id
   hosted_zone_id                  = var.hosted_zone_id

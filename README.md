@@ -175,6 +175,7 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | additional\_tag\_map | Map of additional tags to apply to every taggable resource. If you don't want any use an empty map - '{}' | `map(string)` | n/a | yes |
+| description | Short description of what/why this product exists | `string` | n/a | yes |
 | hosted\_zone\_domain\_name | Domain name of the hosted zone to create records in | `string` | n/a | yes |
 | hosted\_zone\_id | ID of Route53 hosted zone to create records in | `string` | n/a | yes |
 | instance\_type | Instance type to use for the cluster nodes | `string` | n/a | yes |
@@ -185,8 +186,10 @@ This module will use SemVer, and will stay on v0.X for the foreseeable future
 | node\_group\_2\_subnet\_id | Subnet to deploy node group 2 to | `string` | n/a | yes |
 | node\_group\_3\_subnet\_id | Subnet to deploy node group 3 to | `string` | n/a | yes |
 | node\_volume\_size | Volume size of worker node disk in GB | `string` | n/a | yes |
+| owner | Email address of owner | `string` | n/a | yes |
 | rancher\_letsencrypt\_email | Email address to use for Rancher's LetsEncrypt certificate | `string` | n/a | yes |
 | rancher\_letsencrypt\_environment | LetsEncrypt environment to use - Valid options: 'staging', 'production' | `string` | n/a | yes |
+| repo | Repo URL that is responsible for this resource | `string` | n/a | yes |
 | stage | Stage, e.g. 'prod', 'staging', 'dev' | `string` | n/a | yes |
 | subdomain\_rancher | Rancher's endpoint will be '{subdomain\_rancher}.{hosted\_zone\_domain\_name}'. {subdomain\_rancher} can be multi-layered e.g. 'rancher.foo.bar' | `string` | n/a | yes |
 | vpc\_id | ID of the VPC to deploy to | `string` | n/a | yes |
